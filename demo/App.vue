@@ -10,7 +10,7 @@
     千呼万唤始出来，犹抱琵琶半遮面。
     转轴拨弦三两声，未成曲调先有情。
     -->
-    <anime-typing @click.native="replay($event)">浔阳江头夜送客</anime-typing>
+    <anime-typing>浔阳江头夜送客</anime-typing>
     <anime-typing animation-in="fadeIn" :offset="1000">枫叶荻花秋瑟瑟</anime-typing>
     <anime-typing animation-in="bounceUp" :offset="2000">主人下马客在船</anime-typing>
     <anime-typing animation-in="slideInLeft" :offset="3000">举酒欲饮无管弦</anime-typing>

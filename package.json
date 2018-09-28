@@ -1,7 +1,6 @@
 {
   "name": "vue-anime-typing",
   "version": "0.1.2",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
