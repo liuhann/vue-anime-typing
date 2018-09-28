@@ -40,7 +40,7 @@ export default {
   zoomIn: {
     animateFrom: {
       opacity: 0,
-      scale: '1.6'
+      scale: '2'
     },
     animateTo: {
       opacity: 1,
@@ -58,6 +58,30 @@ export default {
       rotate: '0',
       translateX: 0,
       translateY: 0,
+      opacity: 1
+    }
+  },
+  rollTopIn: {
+    animateFrom: {
+      rotateX: '60deg',
+      translateY: -10,
+      opacity: 0
+    },
+    animateTo: {
+      rotateX: '0',
+      translateY: 0,
+      opacity: 1
+    }
+  },
+  rollRightIn: {
+    animateFrom: {
+      rotateY: '60deg',
+      translateX: 30,
+      opacity: 0
+    },
+    animateTo: {
+      rotateY: '0',
+      translateX: 0,
       opacity: 1
     }
   }
