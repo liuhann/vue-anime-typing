@@ -76,9 +76,18 @@ export default {
       fullText = this.text
     }
     this.characters = fullText
+    this.initEvent()
   },
 
   methods: {
+    initEvent () {
+      if (this.$listeners.update) {
+        this.$refs.group.$on('update', () => {
+          this.$emit('update')
+        })
+      }
+    },
+
     animateIn () {
       this.$refs.group.play()
     },
