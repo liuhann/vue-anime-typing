@@ -6,7 +6,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
-  "main": "src/AnimeTyping",
+  "main": "src/AnimeTyping.vue",
   "dependencies": {
     "vue": "^2.5.17",
     "vue-anime": "^0.2.0"
