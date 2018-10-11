@@ -2,6 +2,8 @@
 Many typing effects for vue 
 
 
+![https://raw.githubusercontent.com/liuhann/vue-anime-typing/master/demo/anime-typing.gif](https://raw.githubusercontent.com/liuhann/vue-anime-typing/master/demo/anime-typing.gif)
+
 
 ### install
 
@@ -10,19 +12,10 @@ npm i vue-anime-typing
 ```
 
 
-
-### simple usage
+## simple usage
 
 ```vue
 <anime-typing>浔阳江头夜送客</anime-typing>
-    <anime-typing animation-in="fadeIn" :offset="1000">枫叶荻花秋瑟瑟</anime-typing>
-    <anime-typing animation-in="bounceUp" :offset="2000">主人下马客在船</anime-typing>
-    <anime-typing animation-in="slideInLeft" :offset="3000">举酒欲饮无管弦</anime-typing>
-    <anime-typing animation-in="zoomIn" :offset="4000" :duration="200" easing="linear">醉不成欢惨将别</anime-typing>
-    <anime-typing animation-in="rotateRightIn" :offset="5000" :duration="1000" :delay="500" @complete="isShowContinue=true">别时茫茫江浸月</anime-typing>
-    <anime-typing animation-in="rotateRightIn" :offset="6000" :duration="200" :delay="500">忽闻水上琵琶声</anime-typing>
-    <anime-typing animation-in="rollTopIn" :offset="7000" :duration="400" :delay="300" easing="linear">主人忘归客不发</anime-typing>
-    <anime-typing animation-in="rollRightIn" :offset="8000" :duration="400" :delay="200" easing="linear">寻声暗问弹者谁</anime-typing>
 ```
 
 ## props
@@ -173,8 +166,6 @@ and set them to `defined-animations` property
 
 
 ## Example
-
-
 
 ```vue
 <template>
