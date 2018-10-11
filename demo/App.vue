@@ -16,9 +16,10 @@
     <anime-typing animation-in="slideInLeft" :offset="3000">举酒欲饮无管弦</anime-typing>
     <anime-typing animation-in="zoomIn" :offset="4000" :duration="200" easing="linear">醉不成欢惨将别</anime-typing>
     <anime-typing animation-in="rotateRightIn" :offset="5000" :duration="1000" :delay="500" @complete="isShowContinue=true">别时茫茫江浸月</anime-typing>
-    <anime-typing animation-in="rotateRightIn" :offset="6000" :duration="200" :delay="500">忽闻水上琵琶声</anime-typing>
-    <anime-typing animation-in="rollTopIn" :offset="7000" :duration="400" :delay="300" easing="linear">主人忘归客不发</anime-typing>
-    <anime-typing animation-in="rollRightIn" :offset="8000" :duration="400" :delay="200" easing="linear">寻声暗问弹者谁</anime-typing>
+    <anime-typing animation-in="rotateRightIn" :offset="9000" :duration="200" :delay="200">忽闻水上琵琶声</anime-typing>
+    <anime-typing animation-in="rollTopIn" :offset="10000" :duration="400" :delay="200" easing="linear">主人忘归客不发</anime-typing>
+    <anime-typing animation-in="rollRightIn" :offset="11000" :duration="400" :delay="200" easing="linear">寻声暗问弹者谁</anime-typing>
+    <anime-typing animation-in="defined" :offset="13000" :duration="400" :delay="200" easing="linear" :defined-animations="definedAnimation">琵琶声停欲语迟</anime-typing>
   </div>
 </template>
 
@@ -33,7 +34,21 @@ export default {
   data () {
     return {
       isShowContinue: false,
-      togglePlay: false
+      togglePlay: false,
+      definedAnimation: {
+        defined: {
+          animateFrom: {
+            rotateY: '120deg',
+            translateX: -20,
+            opacity: 0
+          },
+          animateTo: {
+            rotateY: '0',
+            translateX: 0,
+            opacity: 1
+          }
+        }
+      }
     }
   },
 
@@ -49,4 +64,8 @@ export default {
 </script>
 
 <style lang="less">
+  #app {
+    text-align: center;
+    font-size: 20px;
+  }
 </style>

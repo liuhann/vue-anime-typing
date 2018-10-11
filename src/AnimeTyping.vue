@@ -54,13 +54,20 @@ export default {
       default () {
         return 'easeOutElastic'
       }
+    },
+    definedAnimations: {
+      type: Object,
+      default () {
+        return {}
+      }
     }
   },
   data () {
+    this.animations = Object.assign(animations, this.definedAnimations)
     return {
       characters: '',
-      animateFrom: animations[this.animationIn].animateFrom,
-      animateTo: animations[this.animationIn].animateTo
+      animateFrom: this.animations[this.animationIn].animateFrom,
+      animateTo: this.animations[this.animationIn].animateTo
     }
   },
   watch: {
