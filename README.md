@@ -1,5 +1,5 @@
 # vue-anime-typing
-Many typing effects for vue 
+Many typing effects for vue
 
 
 ![https://raw.githubusercontent.com/liuhann/vue-anime-typing/master/demo/anime-typing.gif](https://raw.githubusercontent.com/liuhann/vue-anime-typing/master/demo/anime-typing.gif)
@@ -20,19 +20,19 @@ npm i vue-anime-typing
 
 ## props
 
-### text 
+### text
 Type: `String`
 content which is used when default slot text is not set
-### offset 
+### offset
 Type: `Number`
 Playing effect delay by ms. default : 0
-### duration 
+### duration
 Type: `Number`
 The duration of single char animation from hide to show,  by ms. default is 1000
-### delay 
+### delay
 Type: `Number`
 the delay of each char with previous by ms
-### animation-in 
+### animation-in
 Type: `Number`
 the single char 'in' effects. default is  `bounceDown`. see Default animation below
 ### defined-animations
@@ -42,7 +42,7 @@ to define your own animations beside defaults  see Default animation below
 Type: `Boolean`
 default true. if set to false, the typing effect would accour when playing change to false
 ### easing
-entrance easing 
+entrance easing
 
 | Types   | Examples             | Infos                                              |
 | ------- | -------------------- | -------------------------------------------------- |
@@ -61,109 +61,30 @@ entrance easing
 | easeInBack    | easeOutBack    | easeInOutBack    |
 | easeInElastic | easeOutElastic | easeInOutElastic |
 
+### groupStyle
+
+style object for all
+
+### charStyle
+
+style for each char
 
 
 ## Build-in default animations
 
-```javascript
-export default {
-  fadeIn: {
-    animateFrom: {
-      opacity: 0
-    },
-    animateTo: {
-      opacity: 1
-    }
-  },
-  bounceDown: {
-    animateFrom: {
-      opacity: 0,
-      translateY: -20
-    },
-    animateTo: {
-      opacity: 1,
-      translateY: 0
-    }
-  },
-  bounceUp: {
-    animateFrom: {
-      opacity: 0,
-      translateY: 20
-    },
-    animateTo: {
-      opacity: 1,
-      translateY: 0
-    }
-  },
-  slideInLeft: {
-    animateFrom: {
-      opacity: 0,
-      translateX: 30
-    },
-    animateTo: {
-      opacity: 1,
-      translateX: 0
-    }
-  },
-  zoomIn: {
-    animateFrom: {
-      opacity: 0,
-      scale: '2'
-    },
-    animateTo: {
-      opacity: 1,
-      scale: '1'
-    }
-  },
-  rotateRightIn: {
-    animateFrom: {
-      rotate: '45deg',
-      translateX: 20,
-      translateY: -20,
-      opacity: 0
-    },
-    animateTo: {
-      rotate: '0',
-      translateX: 0,
-      translateY: 0,
-      opacity: 1
-    }
-  },
-  rollTopIn: {
-    animateFrom: {
-      rotateX: '60deg',
-      translateY: -10,
-      opacity: 0
-    },
-    animateTo: {
-      rotateX: '0',
-      translateY: 0,
-      opacity: 1
-    }
-  },
-  rollRightIn: {
-    animateFrom: {
-      rotateY: '60deg',
-      translateX: 30,
-      opacity: 0
-    },
-    animateTo: {
-      rotateY: '0',
-      translateX: 0,
-      opacity: 1
-    }
-  }
-}
+- fadeIn
+- bounceDown
+- bounceUp
+- slideInLeft
+- zoomIn
+- rotateRightIn
+- rollTopIn
+- rollRightIn
 
-```
-
-
+### Defined animation
 
 add your animations with `animateFrom` and `animateTo`
-
-and set them to `defined-animations` property  
-
-
+and set them to `defined-animations` property
 
 ## Example
 

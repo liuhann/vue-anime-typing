@@ -1,8 +1,9 @@
 <template>
   <vue-anime-group ref="group" class="anime-typing" :delay="(el, i)=>i * delay" :duration="duration"
                    :from="animateFrom" :animate="animateTo" :playing="playing" :easing="easing" :offset="offset"
+                   :style="groupStyle"
                   @complete="$emit('complete')" @begin="$emit('begin')">
-    <vue-anime class="anime" v-for="(char, index) in characters" :key="index" v-html="char" ></vue-anime>
+    <vue-anime class="anime" v-for="(char, index) in characters" :key="index" v-html="char" :style="charStyle"></vue-anime>
   </vue-anime-group>
 </template>
 
@@ -54,6 +55,12 @@ export default {
       default () {
         return 'easeOutElastic'
       }
+    },
+    groupStyle: {
+      type: Object
+    },
+    charStyle: {
+      type: Object
     },
     definedAnimations: {
       type: Object,
