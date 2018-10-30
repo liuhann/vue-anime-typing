@@ -1,7 +1,7 @@
 <template>
   <vue-anime-group ref="group" class="anime-typing" :delay="(el, i)=>i * delay" :duration="duration"
                    :from="animateFrom" :animate="animateTo" :playing="playing" :easing="easing" :offset="offset"
-                  @complete="$emit('complete')" @update="$emit('update')" @begin="$emit('begin')">
+                  @complete="$emit('complete')" @begin="$emit('begin')">
     <vue-anime class="anime" v-for="(char, index) in characters" :key="index" v-html="char" ></vue-anime>
   </vue-anime-group>
 </template>
